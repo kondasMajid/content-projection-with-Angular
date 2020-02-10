@@ -1,0 +1,41 @@
+
+<!-- single slot -->
+<div class="card">
+    <ng-content></ng-content>
+</div>
+
+
+<!-- Multi slot -->
+<div class="card">
+    <div>
+        <div class="card-header">
+            <ng-content select="card-header"></ng-content>
+        </div>
+    </div>
+    <div>
+        <div class="card-body">
+            <ng-content select="card-body"></ng-content>
+        </div>
+    </div>
+    <div>
+        <div class="card-body">
+            <ng-content select="card-footer"></ng-content>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- 
+
+
+<div class="card card-block " style="width: 400px; margin: auto;">
+    <ng-content>
+        
+    </ng-content>
+</div> -->
